@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+AGES-Domain: com.stratagis.geoevent.adapter
+Bnd-LastModified: 1412007693923
+Build-Jdk: 1.7.0_51
+Built-By: aseidel
+Bundle-ContactAddress: info@raconsultantsllc.com
+Bundle-ManifestVersion: 2
+Bundle-Name: StrataGIS :: GeoEvent :: Adapter :: Sgcustom
+Bundle-SymbolicName: com.stratagis.geoevent.adapter.stratagis-adapter
+Bundle-Version: 10.2.1
+Created-By: Apache Maven Bundle Plugin
+Export-Service: com.esri.ges.adapter.AdapterService;threadSafe=false
+Import-Package: com.esri.ges.adapter,com.esri.ges.adapter.util,com.esri.
+ ges.core.component,com.esri.ges.core.geoevent,com.esri.ges.core.validat
+ ion,com.esri.ges.messaging,com.esri.ges.spatial,javax.xml.bind,org.apac
+ he.commons.logging,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-1.50.0

@@ -1,0 +1,61 @@
+<adapter name="StrataGIS" label="StrataGIS Custom Input" domain="com.stratagis.geoevent.adapter.inbound" type="inbound">
+	<description>This is a custom adapter designed by Strata-GIS</description>
+	<geoEventDefinitions>
+		<geoEventDefinition name="SGCustom">
+			<fieldDefinitions>
+				<fieldDefinition name="DeviceId" type="String">
+					<fieldDefinitionTag>
+						<name>TRACK_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="TimeStamp" type="Date">
+					<fieldDefinitionTag>
+						<name>TIME_START</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Shape" type="Geometry">
+					<fieldDefinitionTag>
+						<name>GEOMETRY</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Validity" type="String"/>
+				<fieldDefinition name="Speed" type="Double"/>
+				<fieldDefinition name="Course" type="Double"/>
+				<fieldDefinition name="Variation" type="Double"/>
+				<fieldDefinition name="EastWest" type="String"/>
+				<fieldDefinition name="VehicleId" type="String">
+					<fieldDefinitionTag>
+						<name>VEHICLE_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="EventNumber" type="Integer"/>					
+				<fieldDefinition name="GpsOdometerMiles" type="Double"/>
+				<fieldDefinition name="VIN" type="String"/>
+				<fieldDefinition name="ODBProtocol" type="String"/>
+				<fieldDefinition name="FirmwareVersion" type="String"/>
+				<fieldDefinition name="RSSI" type="String"/>
+				<fieldDefinition name="MILCount" type="String"/>
+				<fieldDefinition name="MILCodes" type="String"/>
+				<fieldDefinition name="OBDTripOdometerMiles" type="Double"/>				
+				<fieldDefinition name="VehicleSpeedMph" type="Integer"/>
+				<fieldDefinition name="Rpms" type="Integer"/>
+				<fieldDefinition name="CoolantTempF" type="Integer"/>
+				<fieldDefinition name="GPSStatus" type="Integer"/>
+				<fieldDefinition name="IdleTimeSec" type="Integer"/>
+				<fieldDefinition name="UserVar" type="String"/>
+				<fieldDefinition name="AccelerationX" type="Double"/>
+				<fieldDefinition name="AccelerationY" type="Double"/>
+				<fieldDefinition name="AccelerationZ" type="Double"/>
+				<fieldDefinition name="ExcAccelTime" type="String"/>
+				<fieldDefinition name="ExcAccelLength" type="Double"/>
+				<fieldDefinition name="ExcAcceleration" type="Double"/>
+				<fieldDefinition name="ExcDecelTime" type="String"/>
+				<fieldDefinition name="ExcDecelLength" type="Double"/>
+				<fieldDefinition name="ExcDeceleration" type="Double"/>
+				<fieldDefinition name="DigitalInput" type="Integer"/>
+				<fieldDefinition name="InputString" type="String"/>
+			</fieldDefinitions>
+		</geoEventDefinition>
+		
+	</geoEventDefinitions>
+</adapter>

@@ -1,0 +1,17 @@
+<connectorDefinition label="StrataGIS Custom Connector" name="stratagis-in" type="inbound">
+	<description>Receive custom data using StrataGIS coded devices</description>
+	<defaultName>stratagis-custom-in</defaultName>
+	<transport uri="com.esri.ges.transport.inbound/UDP/10.2.1" />
+	<adapter uri="com.stratagis.geoevent.adapter.inbound/StrataGIS/10.2.1" />
+	<properties>
+		<shown>
+			<property default="1721" label="Port" name="port" source="transport"/>
+		</shown>
+		<advanced>
+		</advanced>
+		<hidden>
+			<property default="false" label="Multicast mode" name="multicast" source="transport"/>
+			<property default="233.252.0.99" label="Multicast group" name="multicastGroup" source="transport"/>
+		</hidden>
+	</properties>
+</connectorDefinition>

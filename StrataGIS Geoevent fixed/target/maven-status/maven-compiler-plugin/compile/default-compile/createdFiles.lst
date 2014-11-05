@@ -1,0 +1,5 @@
+com\stratagis\geoevent\adapter\sgcustom\StrataGisInboundAdapter.class
+com\stratagis\geoevent\adapter\sgcustom\StrataGisInboundAdapterService.class
+com\stratagis\geoevent\adapter\sgcustom\StrataGisMessageTranslator.class
+com\stratagis\geoevent\adapter\sgcustom\StrataGisGPRMCMessageTranslator.class
+com\stratagis\geoevent\adapter\sgcustom\StrataGisInboundAdapter$GeoEventProducer.class
