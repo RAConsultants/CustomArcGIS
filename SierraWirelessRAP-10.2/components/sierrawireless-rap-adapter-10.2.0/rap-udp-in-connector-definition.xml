@@ -1,0 +1,16 @@
+<connectorDefinition label="Receive RAP from a UDP Socket" name="esri-in-udp-rap" type="inbound">
+	<description>Receive RAP sentences on a UDP Socket. The RAP sentences supported include RAP0x11, RAP0x12, RAP0x13, and RAP0x14.</description>
+	<defaultName>udp-rap-in</defaultName>
+	<adapter uri="com.esri.geoevent.adapter.inbound/RAP/10.2.0" />
+	<transport uri="com.esri.ges.transport.inbound/UDP/10.2.0" />
+	<properties>
+		<shown>
+			<property name="port" label="Server Port" default="5565" source="transport" />
+		</shown>
+		<advanced>
+			<property name="multicast" label="Multicast mode" default="false" source="transport"/>
+			<property name="multicastGroup" label="Multicast group" default="233.252.0.99" source="transport"/>
+		</advanced>
+		<hidden/>
+	</properties>
+</connectorDefinition>

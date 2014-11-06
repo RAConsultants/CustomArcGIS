@@ -1,0 +1,179 @@
+<adapter name="RAP" label="RAP Inbound Adapter" domain="com.esri.geoevent.adapter.inbound" type="inbound">
+	<description>This adapter is capable of receiving/parsing raw data in the RAP (Remote Access Protocol) format.</description>
+	<geoEventDefinitions>
+		<geoEventDefinition name="RAP0x14">
+			<fieldDefinitions>
+				<fieldDefinition name="DeviceId" type="String">
+					<fieldDefinitionTag>
+						<name>TRACK_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="ReportType" type="Short" />
+				<fieldDefinition name="ReportLen" type="Short" />
+				<fieldDefinition name="Shape" type="Geometry">
+					<fieldDefinitionTag>
+						<name>GEOMETRY</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Velocity" type="Short" />
+				<fieldDefinition name="Direction" type="Short" />
+				<fieldDefinition name="TimeStamp" type="Date">
+					<fieldDefinitionTag>
+						<name>TIME_START</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="MicState" type="Boolean" />
+				<fieldDefinition name="RTS" type="Boolean" />
+				<fieldDefinition name="DTR" type="Boolean" />
+				<fieldDefinition name="GPSQI" type="Boolean" />
+				<fieldDefinition name="GPSSatellites" type="Short" />
+				<fieldDefinition name="Mic" type="Boolean" />
+				<fieldDefinition name="Inputs" type="Boolean" />
+				<fieldDefinition name="DTRI" type="Boolean" />
+				<fieldDefinition name="RTSI" type="Boolean" />
+				<fieldDefinition name="Odom" type="Boolean" />
+				<fieldDefinition name="OdometerValue" type="Integer" />
+				<fieldDefinition name="PinPointXInputs" type="Boolean" />
+				<fieldDefinition name="Input1" type="Boolean" />
+				<fieldDefinition name="Input2" type="Boolean" />
+				<fieldDefinition name="Input3" type="Boolean" />
+				<fieldDefinition name="Input4" type="Boolean" />
+				<fieldDefinition name="Ignition" type="Boolean" />
+				<fieldDefinition name="RFIdentifer" type="Short" />
+				<fieldDefinition name="RFRSSI" type="Short" />
+				<fieldDefinition name="RFChannel" type="Short" />
+				<fieldDefinition name="RFCell" type="Short" />
+				<fieldDefinition name="Service3GAvailable" type="Short" />
+				<fieldDefinition name="AnalogVoltage1" type="Double" />
+				<fieldDefinition name="AnalogVoltage2" type="Double" />
+				<fieldDefinition name="AnalogVoltage3" type="Double" />
+				<fieldDefinition name="AnalogVoltage4" type="Double" />
+			</fieldDefinitions>
+		</geoEventDefinition>
+		<geoEventDefinition name="RAP0x11">
+			<fieldDefinitions>
+				<fieldDefinition name="DeviceId" type="String">
+					<fieldDefinitionTag>
+						<name>TRACK_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="ReportType" type="Short" />
+				<fieldDefinition name="ReportLen" type="Short" />
+				<fieldDefinition name="Shape" type="Geometry">
+					<fieldDefinitionTag>
+						<name>GEOMETRY</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Velocity" type="Short" />
+				<fieldDefinition name="Direction" type="Short" />
+				<fieldDefinition name="TimeStamp" type="Date">
+					<fieldDefinitionTag>
+						<name>TIME_START</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="MicState" type="Boolean" />
+				<fieldDefinition name="RTS" type="Boolean" />
+				<fieldDefinition name="DTR" type="Boolean" />
+				<fieldDefinition name="GPSQI" type="Boolean" />
+				<fieldDefinition name="GPSSatellites" type="Short" />
+				<fieldDefinition name="Mic" type="Boolean" />
+				<fieldDefinition name="Inputs" type="Boolean" />
+				<fieldDefinition name="DTRI" type="Boolean" />
+				<fieldDefinition name="RTSI" type="Boolean" />
+				<fieldDefinition name="Odom" type="Boolean" />
+				<fieldDefinition name="OdometerValue" type="Integer" />
+				<fieldDefinition name="PinPointXInputs" type="Boolean" />
+				<fieldDefinition name="Input1" type="Boolean" />
+				<fieldDefinition name="Input2" type="Boolean" />
+				<fieldDefinition name="Input3" type="Boolean" />
+				<fieldDefinition name="Input4" type="Boolean" />
+				<fieldDefinition name="Ignition" type="Boolean" />
+			</fieldDefinitions>
+		</geoEventDefinition>
+		<geoEventDefinition name="RAP0x13">
+			<fieldDefinitions>
+				<fieldDefinition name="DeviceId" type="String">
+					<fieldDefinitionTag>
+						<name>TRACK_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="ReportType" type="Short" />
+				<fieldDefinition name="ReportLen" type="Short" />
+				<fieldDefinition name="Shape" type="Geometry">
+					<fieldDefinitionTag>
+						<name>GEOMETRY</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Velocity" type="Short" />
+				<fieldDefinition name="Direction" type="Short" />
+				<fieldDefinition name="TimeStamp" type="Date">
+					<fieldDefinitionTag>
+						<name>TIME_START</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="MicState" type="Boolean" />
+				<fieldDefinition name="RTS" type="Boolean" />
+				<fieldDefinition name="DTR" type="Boolean" />
+				<fieldDefinition name="GPSQI" type="Boolean" />
+				<fieldDefinition name="GPSSatellites" type="Short" />
+				<fieldDefinition name="Mic" type="Boolean" />
+				<fieldDefinition name="Inputs" type="Boolean" />
+				<fieldDefinition name="DTRI" type="Boolean" />
+				<fieldDefinition name="RTSI" type="Boolean" />
+				<fieldDefinition name="Odom" type="Boolean" />
+				<fieldDefinition name="OdometerValue" type="Integer" />
+				<fieldDefinition name="PinPointXInputs" type="Boolean" />
+				<fieldDefinition name="Input1" type="Boolean" />
+				<fieldDefinition name="Input2" type="Boolean" />
+				<fieldDefinition name="Input3" type="Boolean" />
+				<fieldDefinition name="Input4" type="Boolean" />
+				<fieldDefinition name="Ignition" type="Boolean" />
+				<fieldDefinition name="RFIdentifer" type="Short" />
+				<fieldDefinition name="RFRSSI" type="Short" />
+				<fieldDefinition name="RFChannel" type="Short" />
+				<fieldDefinition name="RFCell" type="Short" />
+				<fieldDefinition name="Service3GAvailable" type="Short" />
+			</fieldDefinitions>
+		</geoEventDefinition>
+		<geoEventDefinition name="RAP0x12">
+			<fieldDefinitions>
+				<fieldDefinition name="DeviceId" type="String">
+					<fieldDefinitionTag>
+						<name>TRACK_ID</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="ReportType" type="Short" />
+				<fieldDefinition name="ReportLen" type="Short" />
+				<fieldDefinition name="Shape" type="Geometry">
+					<fieldDefinitionTag>
+						<name>GEOMETRY</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="Velocity" type="Short" />
+				<fieldDefinition name="Direction" type="Short" />
+				<fieldDefinition name="TimeStamp" type="Date">
+					<fieldDefinitionTag>
+						<name>TIME_START</name>
+					</fieldDefinitionTag>
+				</fieldDefinition>
+				<fieldDefinition name="MicState" type="Boolean" />
+				<fieldDefinition name="RTS" type="Boolean" />
+				<fieldDefinition name="DTR" type="Boolean" />
+				<fieldDefinition name="GPSQI" type="Boolean" />
+				<fieldDefinition name="GPSSatellites" type="Short" />
+				<fieldDefinition name="Mic" type="Boolean" />
+				<fieldDefinition name="Inputs" type="Boolean" />
+				<fieldDefinition name="DTRI" type="Boolean" />
+				<fieldDefinition name="RTSI" type="Boolean" />
+				<fieldDefinition name="Odom" type="Boolean" />
+				<fieldDefinition name="OdometerValue" type="Integer" />
+				<fieldDefinition name="PinPointXInputs" type="Boolean" />
+				<fieldDefinition name="Input1" type="Boolean" />
+				<fieldDefinition name="Input2" type="Boolean" />
+				<fieldDefinition name="Input3" type="Boolean" />
+				<fieldDefinition name="Input4" type="Boolean" />
+				<fieldDefinition name="Ignition" type="Boolean" />
+			</fieldDefinitions>
+		</geoEventDefinition>
+	</geoEventDefinitions>
+</adapter>

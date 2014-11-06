@@ -1,0 +1,19 @@
+<connectorDefinition label="Receive RAP from a TCP Socket" name="esri-in-tcp-rap" type="inbound">
+	<description>Receive RAP sentences on a TCP Socket. The RAP sentences supported include RAP0x11, RAP0x12, RAP0x13, and RAP0x14.</description>
+	<defaultName>tcp-rap-in</defaultName>
+	<adapter uri="com.esri.geoevent.adapter.inbound/RAP/10.2.0" />
+	<transport uri="com.esri.ges.transport.inbound/TCP/10.2.0" />
+	<properties>
+		<shown>
+			<property name="port" label="Server Port" default="5565" source="transport" />
+		</shown>
+		<advanced>
+		</advanced>
+		<hidden>
+			<property name="mode" label="Mode" default="SERVER" source="transport" />
+			<property name="host" label="Host (Client Mode)" default="" source="transport" />
+			<property name="clientConnectionTimeout" label="Connection Timeout (Client Mode)" default="60" source="transport" />
+			<property name="handshake" label="Handshake Text" default="" source="transport" />
+		</hidden>
+	</properties>
+</connectorDefinition>
